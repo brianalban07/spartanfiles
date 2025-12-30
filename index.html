@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wistron Spartan Documents</title>
+    <!-- Favicon -->
+    <link rel="icon" href="./spartan-icon.ico" type="image/x-icon">
     <!-- Font Awesome for Icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js" defer></script>
     <style>
         /* Basic Reset */
         * {
@@ -35,17 +38,16 @@
             margin-bottom: 40px; /* Add spacing below the header */
         }
 
-   .header-icon {
-    width: 60px;
-    height: 60px;
-        border-radius: 50%; /* Optional: Makes the sides rounded */
- /* Inner & Outer Glow */
-    box-shadow: inset 0 0 15px 5px #7BB1CD, /* Inner Glow */
-                0 0 15px 5px #7BB1CD;     /* Outer Glow */
-}
+        .header-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%; /* Optional: Makes the sides rounded */
+            /* Inner & Outer Glow */
+            box-shadow: inset 0 0 15px 5px #7BB1CD, /* Inner Glow */
+                        0 0 15px 5px #7BB1CD;     /* Outer Glow */
+            animation: glow-pulse 2s infinite; /* Adjust timing as needed */
+        }
 
-          animation: glow-pulse 2s infinite; /* Adjust timing as needed */
-}
         /* Space between Header and Columns */
         .header-spacing {
             margin-bottom: 30px; /* Add spacing below the header */
@@ -121,7 +123,7 @@
             }
         }
 
-                        /* Logout Button Styling */
+        /* Logout Button Styling */
         .logout-btn {
             position: absolute;
             top: 20px; /* Adjust for positioning in the header */
@@ -148,6 +150,7 @@
     <!-- Header -->
     <div class="header header-spacing">
         <!-- Display Spartan Icon -->
+        <img src="./spartan-icon.ico" alt="Spartan Icon" class="header-icon">
         Wistron Spartan Documents
         <!-- Add a logout button to the header -->
         <a href="/spartanfiles/logout" class="logout-btn">
@@ -163,8 +166,7 @@
             <div class="column">
                 <div class="column-header">TE (Test Engineering)</div>
                 <div class="categories">
-                    <a href="./category.html">Naomi</a>
-
+                    <a href="./category.html">
                         <i class="fas fa-user"></i> Naomi
                     </a>
                     <a href="/spartanfiles/TE/Rosa">
